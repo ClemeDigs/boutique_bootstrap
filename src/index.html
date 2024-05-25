@@ -3,32 +3,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg" href="./img/Logo-Clementine.svg">
     <title>Un zeste de Clémentine</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script type="module" src="./js/main.js"></script>
 </head>
 
-    <body class="bg-warning bg-opacity-25">
+    <body class="d-flex flex-column gap-5 bg-secondary">
         <header>
-            <div class="d-flex p-2 bg-warning justify-content-center">
+            <div class="p-2 bg-primary text-center fw-medium">
                 <p class="mb-0 p-2">Livraison gratuite à partir de 75$ dans la région de Québec</p>
             </div>
-            <div class="d-flex bg-light justify-content-between align-items-center p-2 shadow-lg rounded-bottom-5">
-                <div class="bg-light d-flex">
+            <div class="d-flex bg-light justify-content-between align-items-center px-3 shadow-lg rounded-bottom-5 p-2">
+                <div class="bg-light d-flex gap-5 ">
                     <div class="d-flex justify-content-center align-content-center">
                         <img style="width: 80px;" class="img-fluid" src="./img/logo.jpg" alt="logo">
-                        <p class="align-content-center m-0 ">Un Zeste de Clémentine</p>
+                        <p class="align-content-center m-0 h4">Un Zeste de Clémentine</p>
+                    </div>
+                    <div class="d-none d-lg-flex align-items-center">
+                        <ul class="list-unstyled gap-3 m-0 d-flex">
+                            <li><a class="text-decoration-none text-reset" href="#">Pâtisseries</a></li>
+                            <li><a class="text-decoration-none text-reset" href="">Chocolats</a></li>
+                            <li><a class="text-decoration-none text-reset" href="">Confiseries</a></li>
+                            <li><a class="text-decoration-none text-reset" href="">À propos</a></li>
+                            <li><a class="text-decoration-none text-reset" href="">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="d-flex align-items-center ">
-                    <ul class="list-unstyled gap-4 d-none d-lg-flex m-0">
-                        <li><a class="text-decoration-none text-reset" href="#">Pâtisseries</a></li>
-                        <li><a class="text-decoration-none text-reset" href="">Chocolats</a></li>
-                        <li><a class="text-decoration-none text-reset" href="">Confiseries</a></li>
-                        <li><a class="text-decoration-none text-reset" href="">À propos</a></li>
-                        <li><a class="text-decoration-none text-reset" href="">Contact</a></li>
-                    </ul>
-                </div>
+                
                 <div class="d-flex gap-2 ">
                     <span class="material-symbols-outlined">
                         shopping_cart
@@ -44,22 +46,151 @@
                 </div>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="menu-mobile" aria-labelledby="menu-mobile">
-                <div class="offcanvas-header bg-warning opacity-75">
+                <div class="offcanvas-header bg-primary">
                   <h5 class="menu" id="menu-mobile">Menu</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                   <div>
                     <ul class="d-flex flex-column list-unstyled gap-4 p-3 ">
-                        <li>Pâtisseries</li>
-                        <li>Chocolats</li>
-                        <li>Confiseries</li>
-                        <li>À propos</li>
-                        <li>Contact</li>
+                        <li><a href="#">Pâtisseries</a></li>
+                        <li><a href="#">Chocolats</a></li>
+                        <li><a href="#">Confiseries</a></li>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                   </div>
                 </div>
               </div>
         </header>
+
+        <main>
+            <div class="container bg-light rounded-4 p-5 shadow-lg">
+                <p class="fs-3 fw-bold text-center">Nos produits vedette</p>
+                <div class="row">
+                    <div class="carte col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card bg-light rounded-4 p-4 shadow-lg">
+                            <img class="m-auto" src="./img/barre-chocolatee.png" alt="Barre chocolatée">
+                            <p class="fs-4 fw-bold">Barre chocolatée</p>
+                            <p>Barre chocolatée garnie de nougat et de caramel maison</p>
+                            <p class="fw-bold fs-5">3,99$</p>
+                        </div>
+                    </div>
+                    <div class="carte col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card bg-light rounded-4 p-4 shadow-lg">
+                            <img class="m-auto" src="./img/biscottis.png" alt="Biscottis">
+                            <p class="fs-4 fw-bold">Biscottis</p>
+                            <p>Sachet de 12 biscottis aux noix et fruits confits</p>
+                            <p class="fw-bold fs-5">14,99$</p>
+                        </div>
+                    </div>
+                    <div class="carte col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card bg-light rounded-4 p-4 shadow-lg">
+                            <img class="m-auto" src="./img/biscuits-fourres.png" alt="Biscuits fourrés">
+                            <p class="fs-4 fw-bold">Biscuits fourrés</p>
+                            <p>Assortiment de biscuits fourrés au chocolat et caramel maison</p>
+                            <p class="fw-bold fs-5">19,99$</p>
+                        </div>
+                    </div>
+                    <div class="carte col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card bg-light rounded-4 p-4 shadow-lg">
+                            <img class="m-auto" src="./img/cookies.png" alt="Cookies">
+                            <p class="fs-4 fw-bold">Cookies</p>
+                            <p>Boite de 6 délicieux cookies aux pépites de chocolat</p>
+                            <p class="fw-bold fs-5">12,99$</p>
+                        </div>
+                    </div>
+                    <div class="carte col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card bg-light rounded-4 p-4 shadow-lg">
+                            <img class="m-auto" src="./img/macarons.png" alt="Macarons">
+                            <p class="fs-4 fw-bold">Macarons</p>
+                            <p>Boite de 6 délicieux cookies aux pépites de chocolat</p>
+                            <p class="fw-bold fs-5">17,99$</p>
+                        </div>
+                    </div>
+                    <div class="carte col-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card bg-light rounded-4 p-4 shadow-lg">
+                            <img class="m-auto" src="./img/palets-bretons.png" alt="Palets bretons">
+                            <p class="fs-4 fw-bold">Palets bretons</p>
+                            <p>Boite de palets bretons pur beurre au sel de Guérande</p>
+                            <p class="fw-bold fs-5">12,99$</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-primary p-4 p-md-5">
+            <div class="row">
+                <div class="bg-white rounded-5 p-4 d-flex justify-content-between shadow-lg col-12 col-lg-6 gap-4">
+                    <div class="d-flex">
+                        <img class="m-auto h-auto" src="./img/logo.jpg" alt="logo">
+                        <p class="align-content-center m-0 h6">Un Zeste de Clémentine</p>
+                    </div>
+                    <div>
+                        <p class="fs-4 fw-bold">Contact</p>
+                        <p>Pour toute question, n'hésitez pas à nous contacter !</p>
+                        <a class="text-reset" href="mailto:un-zeste-de-clementine.gmail.com">un-zeste-de-clementine@gmail.com</a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly col-12 col-lg-6 mt-4 mt-lg-0">
+                    <nav>
+                        <ul class="list-unstyled">
+                            <li><a class="fw-bold" href="#">À propos</a></li>
+                            <li><a href="#">La boutique</a></li>
+                            <li><a href="#">L'histoire</a></li>
+                            <li><a href="#">Notre équipe</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="list-unstyled">
+                            <li><a class="fw-bold" href="#">Boutique en ligne</a></li>
+                            <li><a href="#">Pâtisseries</a></li>
+                            <li><a href="#">Chocolats</a></li>
+                            <li><a href="#">Confiseries</a></li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="list-unstyled">
+                            <li><a class="fw-bold" href="#">Livraison</a></li>
+                            <li><a href="#">Conditions de livraison</a></li>
+                            <li><a href="#">Échange et retour</a></li>
+                            <li><a href="#">Politique de la maison</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="p-4 d-flex flex-column col-12 col-lg-4 order-1 order-lg-2">
+                    <p class="fs-4 fw-bold text-center">Incris-toi à l'infolettre !</p>
+                    <div>
+                        <label for="email">Courriel :</label>
+                        <input class="input-group flex-nowrap rounded-3" type="text" id="email">
+                    </div>
+                </div>
+                <div class="d-flex gap-5 align-items-end col-12 col-lg-8 mt-4 mt-lg-0 order-2 order-lg-1">
+                    <div class="d-flex gap-2">
+                        <img class="copyright" src="./img/droits-dauteur.png" alt="icone copyright">
+                        <p class="fw-medium">Par Clémentine, mai 2024 - Tous droits réservés</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p class="fw-bold">Suis-nous sur les réseaux :</p>
+                        <div class="d-flex gap-2 m-auto">
+                            <a href="https://www.facebook.com/">
+                                <img src="./img/facebook.png" alt="logo facebook">
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <img src="./img/instagram.png" alt="logo instagram">
+                            </a>
+                            <a href="https://x.com/?lang=en-ca">
+                                <img src="./img/twitter.png" alt="logo twitter">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        </footer>
     </body>
 </html>
